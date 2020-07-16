@@ -1,2 +1,7 @@
 # TodoList
-This is a todo application in which you can use to keep track of your activities to improve productivity
+This is a web application which helps you keep track of all your activities to improve productivity
+You can do the following:
+- add a todo item
+- mark an item as done
+- and delete an item. 
+Also, you can clear your list when all done. I developed this app using HTML, CSS and JS.

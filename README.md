@@ -7,4 +7,4 @@ You can do the following:
 Also, you can clear your list when all done. I developed this app using HTML, CSS and JS.
 
 Download to try out or click the link below to view sample output
-https://www.dropbox.com/s/hvmipkkef9mqdc5/todo.PNG?dl=0
+https://www.dropbox.com/s/dxwvmnumh9nh49h/todo.PNG?dl=0

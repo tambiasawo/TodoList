@@ -6,5 +6,5 @@ You can do the following:
 - and delete an item. 
 Also, you can clear your list when all done. I developed this app using HTML, CSS and JS.
 
-Download to try out or click the link below to view sample output
-https://www.dropbox.com/s/dxwvmnumh9nh49h/todo.PNG?dl=0
+Download to try out or click the link below to view the full demo
+https://drive.google.com/file/d/19KJ0ub4fzs-Te7ZIzBa3Pc_iUOw9Ujvo/view?usp=sharing

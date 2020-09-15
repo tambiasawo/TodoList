@@ -16,7 +16,7 @@ body{
 .header{
     width: 380px;
     height:200px;
-    background-image:url("image1.jpg"); 
+    background-image:url("https://cdn.pixabay.com/photo/2020/09/03/18/12/the-akashi-kaikyo-bridge-5542079_960_720.jpg"); 
     background-size: 100% 200%;
     background-repeat: no-repeat;
     border-radius: 15px 15px 0 0;

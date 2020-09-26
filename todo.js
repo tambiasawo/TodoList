@@ -11,7 +11,7 @@ const plus = document.getElementById('plus');
 const CHECK= "fa-check-circle";
 const UNCHECK="fa-circle-thin";
 const LINE_THROUGH = "lineThrough";
-//localStorage.clear();
+localStorage.clear();
 clear.addEventListener('click', function(){
 	localStorage.clear();
 	location.reload();

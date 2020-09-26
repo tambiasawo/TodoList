@@ -4,7 +4,6 @@ const date=document.getElementById("date");
 const list=document.getElementById('list');
 const input=document.getElementById('input');
 const plus = document.getElementById('plus');
-console.log(plus);
 
 
 //declare classes names

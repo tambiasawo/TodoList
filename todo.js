@@ -3,7 +3,7 @@ const clear=document.querySelector(".clear");
 const date=document.getElementById("date");
 const list=document.getElementById('list');
 const input=document.getElementById('input');
-//const listitem=document.getElementById('.item');
+const plus = document.getElementById('plus');
 //console.log(input.value);
 
 //declare classes names
@@ -62,6 +62,20 @@ input.addEventListener('keyup', function(event){
 
 	}
 });
+
+
+plus.addEventListener('click', function(){
+	const todo = input.value;
+	if(todo)
+	{
+		done=false; trash =false;   // some params (esp. default ones) defined just before calling the func
+		addTodo(todo,id,false, false);
+		LIST.push({name:todo, id: id, done:false, trash:false});
+		localStorage.setItem("TODO", JSON.stringify(LIST)); //stringify converts a js obj to a js notation
+		id++;
+		input.value="";
+	}
+})
 
 list.addEventListener("click", function(e){
 	const element = e.target;

@@ -4,14 +4,15 @@ const date=document.getElementById("date");
 const list=document.getElementById('list');
 const input=document.getElementById('input');
 const plus = document.getElementById('plus');
-//console.log(input.value);
+console.log(plus);
+
 
 //declare classes names
 
 const CHECK= "fa-check-circle";
 const UNCHECK="fa-circle-thin";
 const LINE_THROUGH = "lineThrough";
-
+//localStorage.clear();
 clear.addEventListener('click', function(){
 	localStorage.clear();
 	location.reload();
@@ -20,9 +21,6 @@ clear.addEventListener('click', function(){
 const today = new Date();
 const options= {weekday:"long", month:"short", day:"numeric", year:"2-digit"};
 date.innerHTML=today.toLocaleDateString("en-US", options);
-
-//variables
-
 
 
 //add a todo to list of todos
@@ -63,7 +61,6 @@ input.addEventListener('keyup', function(event){
 	}
 });
 
-
 plus.addEventListener('click', function(){
 	const todo = input.value;
 	if(todo)
@@ -76,7 +73,6 @@ plus.addEventListener('click', function(){
 		input.value="";
 	}
 })
-
 list.addEventListener("click", function(e){
 	const element = e.target;
 	console.log(element);
@@ -88,6 +84,7 @@ list.addEventListener("click", function(e){
 	else if (jobAction=="delete")
 		removeTodo(element);
 }); 
+
 
 //complete a todo
 function completeTodo(element)
@@ -134,5 +131,3 @@ function loadList(array) {
 		addTodo(item.name, item.id, item.done, item.trash);
 	});
 }
-
-	

@@ -21,7 +21,6 @@ body{
     background-repeat: no-repeat;
     border-radius: 15px 15px 0 0;
     position: relative;
-    grid-area: hd;
 }
 .clear{
     width: 30px;
@@ -55,7 +54,6 @@ body{
     max-height:350px;
     background-color: #FFF;
     overflow: auto;
-    grid-area: ct;
 }
 .content::-webkit-scrollbar { 
     display:none
@@ -119,7 +117,6 @@ body{
     background-color: #FFF;
     padding: 10px;
     border-top: 1px solid rgba(0,0,0,0.1);
-    grid-area: bd;
 }
 .add-to-do i{
     position: absolute;
@@ -160,12 +157,5 @@ body{
 
 @media only screen and (max-width: 650px)
 {
-    .container{
-        display: grid;
-        grid-template-rows: .7fr 1.3fr .2fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "hd"
-                              "ct"
-                             "bd";
-    }
+   
 }

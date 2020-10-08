@@ -1,9 +1,10 @@
-//select all elements
+///select all elements
 const clear=document.querySelector(".clear");
 const date=document.getElementById("date");
 const list=document.getElementById('list');
 const input=document.getElementById('input');
 const plus = document.getElementById('plus');
+console.log(plus);
 
 
 //declare classes names
@@ -11,7 +12,7 @@ const plus = document.getElementById('plus');
 const CHECK= "fa-check-circle";
 const UNCHECK="fa-circle-thin";
 const LINE_THROUGH = "lineThrough";
-localStorage.clear();
+//localStorage.clear();
 clear.addEventListener('click', function(){
 	localStorage.clear();
 	location.reload();
@@ -20,6 +21,7 @@ clear.addEventListener('click', function(){
 const today = new Date();
 const options= {weekday:"long", month:"short", day:"numeric", year:"2-digit"};
 date.innerHTML=today.toLocaleDateString("en-US", options);
+
 
 
 //add a todo to list of todos

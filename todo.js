@@ -51,10 +51,10 @@ input.addEventListener('keyup', function(event){
 		const todo = input.value;
 		if(todo)
 		{
-			done=false; trash =false;   // some params (esp. default ones) defined just before calling the func
+			done=false; trash =false;   
 			addTodo(todo,id,false, false);
 			LIST.push({name:todo, id: id, done:false, trash:false});
-			localStorage.setItem("TODO", JSON.stringify(LIST)); //stringify converts a js obj to a js notation
+			localStorage.setItem("TODO", JSON.stringify(LIST)); 
 			id++;
 			input.value="";
 		}
@@ -66,10 +66,10 @@ plus.addEventListener('click', function(){
 	const todo = input.value;
 	if(todo)
 	{
-		done=false; trash =false;   // some params (esp. default ones) defined just before calling the func
+		done=false; trash =false;   
 		addTodo(todo,id,false, false);
 		LIST.push({name:todo, id: id, done:false, trash:false});
-		localStorage.setItem("TODO", JSON.stringify(LIST)); //stringify converts a js obj to a js notation
+		localStorage.setItem("TODO", JSON.stringify(LIST)); 
 		id++;
 		input.value="";
 	}
@@ -77,8 +77,8 @@ plus.addEventListener('click', function(){
 list.addEventListener("click", function(e){
 	const element = e.target;
 	console.log(element);
-	const jobAction = element.attributes.job.value;  // complete or delete
-	//console.log("elem "+jobAction);
+	const jobAction = element.attributes.job.value;  // complete or remove 
+	
 
 	if(jobAction=="complete")
 		completeTodo(element);
@@ -107,10 +107,8 @@ function removeTodo(element)
 	LIST[element.id].trash=true;
 }
 
-//target the items created dynamically to remove or tick as done
-
 //get item from localstorage
-let data =localStorage.getItem("TODO");  // we use local storage in rirder to reload the todo items back to the  scren when the page is re;paded
+let data =localStorage.getItem("TODO");  // we use local storage to reload the todo items back to the screen when the page is reloaded
 
 //if the user added to do items, load them back after page is refreshed
 if(data)
@@ -126,7 +124,7 @@ else{
 }
 
 
-//func TO load data back ont he screen
+//func to load back data (todo items) onto the screen
 function loadList(array) {
 	array.forEach(function(item){
 		addTodo(item.name, item.id, item.done, item.trash);
